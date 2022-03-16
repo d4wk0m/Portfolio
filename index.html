@@ -4,25 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
     <title>Dawid Komęza - Junior Frontend Developer</title>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-
-        </div>
-        <div class="menu">
+    <div class="container">  
+        <div class="menu" id="menu">
             <div class="logo">
                 <img src="./assets/logo.svg" alt="">
+                <div class="logo-text">
+                    <h2 class="logo-top-text">Dawid</h2>
+                    <h2 class="logo-bottom-text">Komęza</h2>
+                </div>
             </div>
             <div class="navbar">
-                <a>Home</a>
-                <a>About Me</a>
-                <a>Projects</a>
-                <a>Contact</a>
+                <div class="navbar-button-container navbar-active">
+                    <span class="navbar-button" id="home" order="1">Home</span>
+                </div>
+                <div class="navbar-button-container">
+                    <span class="navbar-button" id="aboutme" order="2">About Me</span>
+                </div>
+                <div class="navbar-button-container">
+                    <span class="navbar-button" id="projects" order="3">Projects</span>
+                </div>
+                <div class="navbar-button-container">
+                    <span class="navbar-button" id="contact" order="4">Contact</span>
+                </div>
             </div>
         </div>
+        <div class="home content hidden">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Dawid Komęza</h1>
+                    <div class="hero-caption">
+                        <h2>Junior </h2><span class="hero-accent">Front-end</span><h2> Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutme content shown">
+            <div class="content-container">
+                <div class="aboutme-header">
+                    <h3>Hi, </h3><h2>my name is</h2> <h3>Dawid</h3>
+                </div>
+                <div class="aboutme-content">
+                    <div class="aboutme-text">
+                        <p>I’m a Front-End Developer located in Poland. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+                        <p>Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys,</p>
+                        <p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
+                    </div>
+                    <div class="aboutme-skills">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects content hidden" style="background-color: green;">
+            Projects
+        </div>
+        <div class="contact content hidden" style="background-color: blue;">
+            Contact
+        </div>
     </div>
+    <script src="./js/home.js"></script>
 </body>
 </html>

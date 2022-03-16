@@ -1,0 +1,34 @@
+.content-container{
+    width: 75%;
+    margin: 4vw auto;
+}
+
+.aboutme-header{
+    margin: 0 auto 6vw auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.8vw;
+}
+
+.aboutme-header h2{
+    font-size: 3vw;
+    margin: 0;
+
+    filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    -webkit-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238, 240, 242, 0.4));
+}
+
+.aboutme-header h3{
+    font-size: 3vw;
+    margin: 0;
+    color: rgba(166, 65, 184, 1);
+
+    filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -webkit-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+}
+
+.aboutme-content p{
+    font-size: 1.75vw;
+}

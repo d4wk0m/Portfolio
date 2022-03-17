@@ -1,6 +1,6 @@
-.content-container{
+.aboutme > content-container{
     width: 75%;
-    margin: 4vw auto;
+    margin: 3vw auto 10vw auto;
 }
 
 .aboutme-header{
@@ -11,22 +11,24 @@
 }
 
 .aboutme-header h2{
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: 500;
     margin: 0;
 
-    filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    /* filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
     -webkit-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
-    -moz-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238, 240, 242, 0.4));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238, 240, 242, 0.4)); */
 }
 
 .aboutme-header h3{
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: 500;
     margin: 0;
     color: rgba(166, 65, 184, 1);
 
-    filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    /* filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
     -webkit-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
-    -moz-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61)); */
 }
 
 .aboutme-text > p{
@@ -38,12 +40,22 @@
 }
 
 .aboutme-skills{
+    margin-top: 6vw;
+}
+
+.aboutme-skills h2{
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.aboutme-skills-stars{
     display: flex;
     column-gap: 5vw;
     justify-content: center;
 }
 
-.aboutme-skills > div{
+.aboutme-skills-stars > div{
     display: flex;
     flex-direction: column;
     row-gap: 3vw;
@@ -57,6 +69,8 @@
     border-radius: 0.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
+
+    font-size: 1.5vw;
 
     -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);

@@ -1,0 +1,16 @@
+.projects > div{
+    position: relative;
+    margin: 3vw 3vw 10vw 3vw;
+}
+
+.projects-gallery{
+    display: flex;
+}
+
+.projects .item{
+    width: 50%;
+}
+
+.item-content .iphone8-mockup{
+    width: 200px;
+}

@@ -60,14 +60,14 @@ function show(a, b){
 
 function contentheight(a){
     if (a === "home"){
-        
+        document.body.style.overflow = "hidden";
     }
     else{
         var menuTop = document.getElementById('menu').offsetTop;
         var menuHeight = document.getElementById('menu').offsetHeight;
         gora = menuTop + menuHeight;
-        elheight = window.innerHeight - gora;
-        document.getElementsByClassName(a)[0].style.height = elheight + "px";
         document.getElementsByClassName(a)[0].style.top = gora + "px";
+        document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
     }
-}
+} 

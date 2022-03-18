@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
+
 .projects > div{
     position: relative;
     margin: 3vw 3vw 10vw 3vw;
+    padding-bottom: 3vw;
 }
 
 .projects-header{
@@ -39,7 +42,7 @@
 }
 
 .projects .item{
-    width: calc(50% - 1.5vw);
+    width: calc(50% - 1.6vw);
     border-radius: 2vw;
 
     -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
@@ -47,12 +50,16 @@
     box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
 
     background-color: #1C1A23;
+
+    cursor: default!important;
 }
 
 .item-heading{
     margin: auto;
     text-align: center;
-    margin: 2vw;
+    margin: 3vw;
+    font-size: 2.5vw;
+    font-weight: 500;
 }
 
 .item-content{
@@ -103,4 +110,46 @@
     visibility: hidden;
     z-index: -1;
     width: 0!important;
+}
+
+.item-desc{
+    padding: 7.5%;
+    padding-top: 2%;
+}
+
+.item-lang{
+    width: 100%;
+}
+
+.item-lang-ul{
+    display: inline-flex;
+    column-gap: 0.75vw;
+    margin: 0px;
+    list-style: none;
+    padding: 0;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+}
+
+.item-lang-html{
+    color: rgb(106, 190, 205);
+}
+
+.item-lang-css{
+    color: rgb(62, 84, 163);
+}
+
+.item-lang-js{
+    color: rgb(207, 99, 144);
+}
+
+.item-desc{
+    font-size: 1.5vw;
+}
+
+
+.iframe{
+    display: none;
+    cursor: default!important;
 }

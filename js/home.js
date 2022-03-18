@@ -1,4 +1,5 @@
 var navbarbutton = document.getElementsByClassName('navbar-button');
+var iframes = document.querySelectorAll(".iframe")
 
 for (i = 0; i < navbarbutton.length; i++) {   
     navbarbutton[i].addEventListener("click", function() {
@@ -35,7 +36,11 @@ function show(a, b){
             document.getElementsByClassName(b)[0].classList.remove('shown');
             document.getElementsByClassName(a)[0].classList.add('shown');
             },2);
+        iframes.forEach(item => {
+            item.style.display = "none";
+        })
         contentheight(a);
+        
     }
     else{
         // items go to left
@@ -54,6 +59,9 @@ function show(a, b){
             document.getElementsByClassName(b)[0].classList.remove('shown');
             document.getElementsByClassName(a)[0].classList.add('shown');
             },2);
+        iframes.forEach(item => {
+            item.style.display = "none";
+        })
         contentheight(a);
     }
 }
@@ -61,6 +69,19 @@ function show(a, b){
 function contentheight(a){
     if (a === "home"){
         document.body.style.overflow = "hidden";
+    }
+    else if (a === "projects"){
+        window.setTimeout(() => {
+            iframes.forEach(item => {
+                item.style.display = "block";
+            })
+        }, 1000)
+        var menuTop = document.getElementById('menu').offsetTop;
+        var menuHeight = document.getElementById('menu').offsetHeight;
+        gora = menuTop + menuHeight;
+        document.getElementsByClassName(a)[0].style.top = gora + "px";
+        document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
     }
     else{
         var menuTop = document.getElementById('menu').offsetTop;

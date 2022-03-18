@@ -237,6 +237,7 @@
   .px__screen {
     position: relative;
     z-index: 1;
+    overflow: hidden;
   }
 
     .px__screen__ {
@@ -263,14 +264,13 @@
         background-size: cover;
         background-position: center center
       }
-
-        .px__screen__frame > .fa {
-          position: absolute;
-          top:  50%;
-          left: 50%;
-          font-size: 5em;
-          transform: translate(-50%,-50%);
-        }
+      .px__screen__frame iframe{
+        overflow: hidden;
+        background: transparent;
+        border-radius: inherit;
+        background-size: cover;
+        background-position: center center
+      }
 
         .iphone-iframe{
           transform-origin: 0 0;

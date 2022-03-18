@@ -3,14 +3,104 @@
     margin: 3vw 3vw 10vw 3vw;
 }
 
+.projects-header{
+    margin: 0 auto 6vw auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.8vw;
+}
+
+.projects-header h2{
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin: 0;
+
+    /* filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    -webkit-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238, 240, 242, 0.4)); */
+}
+
+.projects-header h3{
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(166, 65, 184, 1);
+
+    /* filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -webkit-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61)); */
+}
+
 .projects-gallery{
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 3vw;
+    row-gap: 3vw;
 }
 
 .projects .item{
-    width: 50%;
+    width: calc(50% - 1.5vw);
+    border-radius: 2vw;
+
+    -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+
+    background-color: #1C1A23;
+}
+
+.item-heading{
+    margin: auto;
+    text-align: center;
+    margin: 2vw;
+}
+
+.item-content{
+    position: relative;
 }
 
 .item-content .iphone8-mockup{
-    width: 200px;
+    width: 25%;
+    position:absolute;
+    z-index: 2;
+    margin: 0;
+
+    bottom: 0;
+    right: 2.5%;
+
+    transition: 0.3s;
+
+    filter: drop-shadow(0.2vw 0.2vw 0.3vw black);
+    -webkit-filter: drop-shadow(0.2vw 0.2vw 0.3vw black);
+    -moz-filter: drop-shadow(0.2vw 0.2vw 0.3vw black);
+}
+
+.item-content .iphone8-mockup:hover{
+    transform: scale(1.05);
+}
+
+.item-content .mbp-mockup-wrapper{
+    width: 95%;
+    position: absolute;
+    margin: 0;
+
+    left: 2.5%;
+    top: 0;
+    z-index: 1;
+
+    transition: 0.3s;
+
+    filter: drop-shadow(0.2vw 0.2vw 0.3vw black);
+    -webkit-filter: drop-shadow(0.2vw 0.2vw 0.3vw black);
+    -moz-filter: drop-shadow(0.2vw 0.2vw 0.3vw black);
+}
+
+.item-content .mbp-mockup-wrapper:hover{
+    transform: scale(1.025);
+}
+
+.item-height{
+    visibility: hidden;
+    z-index: -1;
+    width: 0!important;
 }

@@ -1,9 +1,9 @@
 .mbp-mockup-wrapper {
-	width: 85%;
+	/* width: 85%;
 	max-width: 1280px;
 	min-width: 320px;
 	margin: 10px auto 20px;
-	height: auto;
+	height: auto; */
 	align-self: flex-start;
 	position: relative;
 	display: flex;
@@ -12,7 +12,7 @@
 	position: relative;
 	width: 100%;
 	max-width: 1280px;
-	min-width: 320px;
+	/* min-width: 320px; */
 	height: auto;
 	padding-top: 58.6%;
 	margin: 0 auto;

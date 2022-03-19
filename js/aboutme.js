@@ -4,7 +4,6 @@ var aboutme = document.getElementsByClassName('aboutme')[0];
 
 // Get the offset position of the navbar
 var offset = mouse.offsetTop;
-console.log(aboutmecontent.offsetHeight)
 aboutmeheight = aboutmecontent.offsetHeight + parseInt(aboutme.style.top , 10)
 
 window.addEventListener("click", overflow)
@@ -12,11 +11,9 @@ function overflow(){
     aboutmeheight = aboutmecontent.offsetHeight + parseInt(aboutme.style.top , 10)
 
 if (parseInt(aboutmeheight, 10) > window.innerHeight){
-    console.log()
     window.addEventListener("scroll", mousehide);
 }
 else{
-    console.log(parseInt(aboutme.style.top , 10), window.innerHeight)
     mouse.style.opacity = "0";
 }
 }

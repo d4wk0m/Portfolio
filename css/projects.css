@@ -103,12 +103,7 @@
 
 .item-content .mbp-mockup-wrapper{
     width: 95%;
-    position: absolute;
-    margin: 0;
-
-    left: 2.5%;
-    top: 0;
-    z-index: 1;
+    margin: 0 auto;
 
     transition: 0.3s;
 
@@ -138,8 +133,7 @@
     justify-content: space-between;
 }
 
-.difficulty-wrapper{
-    border: 0.1vw solid rgb(106, 190, 205);
+.difficulty-wrapper{ 
     border-radius: 0.3vw;
     display: inline-flex;
     font-family: Heebo, sans-serif;
@@ -150,9 +144,24 @@
     line-height: 21.1200008392334px;
 }
 
+.difficulty-wrapper-1{
+    border: 0.1vw solid rgb(106, 190, 205);
+}
+
+.difficulty-wrapper-2{
+    border: 0.1vw solid rgb(170, 215, 66);
+}
+
+.difficulty-wrapper-3{
+    border: 0.1vw solid rgb(241, 182, 4);
+}
+
+.difficulty-wrapper-4{
+    border: 0.1vw solid rgb(244, 137, 37);
+}
+
 .difficulty-number{
     -webkit-font-smoothing: antialiased;
-    background-color: rgb(106, 190, 205);
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     display: block;
@@ -162,21 +171,53 @@
     padding-left: 0.75vw;
     padding-right: 0.75vw;
     text-align: left;
+    padding-top: 0.25vw;
 }
 
 .difficulty-name{
-    color: rgb(106, 190, 205);
     display: block;
     font-family: Barlow, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     font-weight: 700;
     padding-left: 0.75vw;
     padding-right: 0.75vw;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
     text-align: left;
     text-decoration-style: solid;
     text-transform: uppercase;
+}
+
+.difficulty-1{
+    background-color: rgb(106, 190, 205);
+    
+}
+
+.difficulty-newbie{
+    color: rgb(106, 190, 205);
+}
+
+.difficulty-2{
+    background-color: rgb(170, 215, 66);
+}
+
+.difficulty-junior{
+    color: rgb(170, 215, 66);
+
+}
+.difficulty-3{
+    background-color: rgb(241, 182, 4);
+}
+
+.difficulty-intermediate{
+    color: rgb(241, 182, 4);
+}
+.difficulty-4{
+    background-color: rgb(244, 137, 37);
+}
+
+.difficulty-advanced{
+    color: rgb(244, 137, 37);
 }
 
 .item-lang{
@@ -192,6 +233,7 @@
     font-size: 2vw;
     font-weight: 700;
     font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
 }
 
 .item-lang-html{

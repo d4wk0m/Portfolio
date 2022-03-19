@@ -18,14 +18,13 @@ $(window).on('resize', function(e) {
 
 });
 
-iframeresize();
+window.setTimeout(() => {
+    iframeresize();
+}, 1000)
+
 
 window.addEventListener("click", iframeresize);
 window.addEventListener("resize", iframeresize);
-
-function consoletest(){
-    console.log("działa");
-}
 
 function iframeresize(){
     //iphone part
@@ -34,7 +33,6 @@ function iframeresize(){
     var mbheight = macbookmockupfull.offsetHeight;
 
     iphoneiframes.forEach(iphoneiframe => {
-        console.log(iphonemockup.offsetWidth)
         iphoneiframe.style.transform = "scale(" + iphonescale + ")";
     })
 

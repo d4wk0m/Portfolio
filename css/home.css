@@ -54,7 +54,7 @@ body{
         width: 100vw;
         height: calc(100vh - 5vw);
         
-        background-image: url("../assets/hero.png");
+        background-image: url("../assets/home/hero.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100vw;

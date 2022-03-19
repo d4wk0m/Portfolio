@@ -132,6 +132,53 @@
     padding-top: 2%;
 }
 
+.item-attributes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.difficulty-wrapper{
+    border: 0.1vw solid rgb(106, 190, 205);
+    border-radius: 0.3vw;
+    display: inline-flex;
+    font-family: Heebo, sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    height: 80%;
+    justify-content: center;
+    line-height: 21.1200008392334px;
+}
+
+.difficulty-number{
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(106, 190, 205);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Barlow, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-left: 0.75vw;
+    padding-right: 0.75vw;
+    text-align: left;
+}
+
+.difficulty-name{
+    color: rgb(106, 190, 205);
+    display: block;
+    font-family: Barlow, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-left: 0.75vw;
+    padding-right: 0.75vw;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration-style: solid;
+    text-transform: uppercase;
+}
+
 .item-lang{
     width: 100%;
 }

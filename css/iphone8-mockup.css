@@ -238,6 +238,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transition: 0.5s;
   }
 
     .px__screen__ {
@@ -245,7 +246,8 @@
       padding-bottom: 218%;
       background-color: #888;
       border-radius: 10%/5%;
-      box-shadow: 0 0 10px #000;
+      overflow: hidden;
+      
     }
 
     .px--ls .px__screen__ {

@@ -5,6 +5,27 @@
     box-sizing: border-box;
 }
 
+ /* width */
+ ::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(66, 66, 66);
+    border-radius: 0.3vw;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(46, 46, 46);
+  } 
+
 body{
     background-color: #131218;
     margin: 0;

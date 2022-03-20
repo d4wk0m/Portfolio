@@ -1,5 +1,5 @@
 var navbarbutton = document.getElementsByClassName('navbar-button');
-var iframes = document.querySelectorAll(".iframe")
+var items = document.querySelectorAll(".item")
 
 for (i = 0; i < navbarbutton.length; i++) {   
     navbarbutton[i].addEventListener("click", function() {
@@ -36,7 +36,7 @@ function show(a, b){
             document.getElementsByClassName(b)[0].classList.remove('shown');
             document.getElementsByClassName(a)[0].classList.add('shown');
             },2);
-        iframes.forEach(item => {
+        items.forEach(item => {
             item.style.display = "none";
         })
         contentheight(a);
@@ -59,7 +59,7 @@ function show(a, b){
             document.getElementsByClassName(b)[0].classList.remove('shown');
             document.getElementsByClassName(a)[0].classList.add('shown');
             },2);
-        iframes.forEach(item => {
+        items.forEach(item => {
             item.style.display = "none";
         })
         contentheight(a);
@@ -72,10 +72,10 @@ function contentheight(a){
     }
     else if (a === "projects"){
         window.setTimeout(() => {
-            iframes.forEach(item => {
+            items.forEach(item => {
                 item.style.display = "block";
             })
-        }, 1000)
+        }, 600)
         var menuTop = document.getElementById('menu').offsetTop;
         var menuHeight = document.getElementById('menu').offsetHeight;
         gora = menuTop + menuHeight;

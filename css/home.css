@@ -231,6 +231,6 @@ body{
 
     .content{
         color: rgb(215, 214, 214);
-        transition: 1s;
+        transition: 0.6s ;
     }
 }

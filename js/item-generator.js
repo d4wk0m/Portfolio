@@ -5,7 +5,7 @@ window.onload = itemgenerator()
 
 function itemgenerator(){
     for (i = 0; i < item.length; i++) {   
-        templink = item[i].getAttribute("link");
+        templink = 'https://d4wk0m.github.io/' + item[i].getAttribute("link");
         temptitle = item[i].getAttribute("title");
         tempdifficulty = item[i].getAttribute("difficulty");
         tempdesc = item[i].getAttribute("desc");

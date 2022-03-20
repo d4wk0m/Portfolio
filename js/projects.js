@@ -10,17 +10,14 @@ var resizeTimer;
 $(window).on('resize', function(e) {
 
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(iframeresize
-
-    // Run code here, resizing has "stopped"
-            
-  , 1000);
+  resizeTimer = setTimeout(iframeresize      
+  , 600);
 
 });
 
 window.setTimeout(() => {
     iframeresize();
-}, 1000)
+}, 600)
 
 
 window.addEventListener("click", iframeresize);
@@ -28,22 +25,38 @@ window.addEventListener("resize", iframeresize);
 
 function iframeresize(){
     //iphone part
-    var iphonescale = iphonemockup.offsetWidth / 375;
-    var mbscale = macbookmockup.offsetWidth / 1280;
-    var mbheight = macbookmockupfull.offsetHeight;
-
-    iphoneiframes.forEach(iphoneiframe => {
-        iphoneiframe.style.transform = "scale(" + iphonescale + ")";
-    })
-
-    mbiframes.forEach(mbiframe => {
-        mbiframe.style.transform = "scale(" + mbscale + ")";
-    })
-
-    itemheights.forEach(itemheight => {
-        itemheight.style.height = mbheight + "px";
-    })
-
-
-    //macbook part
+    window.setTimeout(() => {
+        var iphonescale = iphonemockup.offsetWidth / 375;
+        var mbscale = macbookmockup.offsetWidth / 1280;
+        var mbheight = macbookmockupfull.offsetHeight;
+    
+        iphoneiframes.forEach(iphoneiframe => {
+            iphoneiframe.style.transform = "scale(" + iphonescale + ")";
+        })
+    
+        mbiframes.forEach(mbiframe => {
+            mbiframe.style.transform = "scale(" + mbscale + ")";
+        })
+    
+        itemheights.forEach(itemheight => {
+            itemheight.style.height = mbheight + "px";
+        })
+    }, 601)
+    window.setTimeout(() => {
+        var iphonescale = iphonemockup.offsetWidth / 375;
+        var mbscale = macbookmockup.offsetWidth / 1280;
+        var mbheight = macbookmockupfull.offsetHeight;
+    
+        iphoneiframes.forEach(iphoneiframe => {
+            iphoneiframe.style.transform = "scale(" + iphonescale + ")";
+        })
+    
+        mbiframes.forEach(mbiframe => {
+            mbiframe.style.transform = "scale(" + mbscale + ")";
+        })
+    
+        itemheights.forEach(itemheight => {
+            itemheight.style.height = mbheight + "px";
+        })
+    }, 1)
 }

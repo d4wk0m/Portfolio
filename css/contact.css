@@ -1,0 +1,96 @@
+.contact > .content-container{
+    width: 75%;
+    margin: 3vw auto 3vw auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 7.5vw;
+    flex-shrink: 0;
+}
+
+.links{
+    flex-basis: 50%;
+}
+
+.contacts{
+    flex-basis: 50%;
+}
+
+.contacts-header{
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin: 0 auto 3vw auto;
+}
+
+.links-header{
+    display: flex;
+    margin: 0 auto 3vw auto;
+    width: max-content;
+    text-align: center;
+}
+
+.links-header-accent{
+    color: rgba(166, 65, 184, 1);;
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin: 0;
+}
+.links-header-main{
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contacts-list{
+    width: 100%;
+    margin: auto;
+    padding: 1vw 2vw;
+
+    border-radius: 1vw;
+
+    -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+}
+
+.contacts-list > li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type:none;
+    column-gap: 1.5vw;
+    margin: 1.5vw auto;
+}
+
+.contacts-list > li > img{
+    height: 3vw;
+
+}
+
+.contacts-list > li > a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: rgb(215, 214, 214);
+    transition: 0.3s;
+}
+
+.contacts-list > li > a:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    color: rgba(166, 65, 184, 1);
+}
+
+.githubico{
+    padding: 0.25vw;
+    background-color: rgb(215, 214, 214);
+    border-radius: 15%;
+}
+
+.frontendmentorico{
+    padding: 0.5vw;
+    background-color: rgb(215, 214, 214);
+    border-radius: 15%;
+    width: 3vw;
+}

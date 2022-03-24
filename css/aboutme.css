@@ -1,4 +1,95 @@
-.aboutme{
+@media screen and (max-width: 600px){
+  .aboutme{
+    height: auto;
+}
+
+.aboutme > .content-container{
+    width: 90%;
+    margin: 6vw auto 4vw auto;
+}
+
+.aboutme-header{
+    margin: 0 auto 12vw auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+}
+
+.aboutme-header h2{
+    font-size: 7vw;
+    font-weight: 500;
+    margin: 0;
+
+    /* filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    -webkit-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238, 240, 242, 0.4)); */
+}
+
+.aboutme-header h3{
+    font-size: 7vw;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(166, 65, 184, 1);
+
+    /* filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -webkit-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
+    -moz-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61)); */
+}
+
+.aboutme-text > p{
+    font-size: 4.5vw;
+}
+
+.checked{
+    color: rgba(166, 65, 184, 1);
+}
+
+.aboutme-skills{
+    margin-top: 8vw;
+}
+
+.aboutme-skills h2{
+    font-weight: 400;
+    font-size: 6vw;
+    text-align: center;
+}
+
+.aboutme-skills-stars{
+    display: flex;
+    column-gap: 5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10vw;
+    margin-top: 10vw;
+}
+
+.aboutme-skills-stars > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 5vw;
+    min-width: 300px;
+}
+
+.stars-item{
+    display: flex;
+    align-items: center;
+    column-gap: 1vw;
+    justify-content: space-between;
+    border-radius: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    font-size: 3vw;
+
+    -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
+}
+}
+
+@media screen and (min-width: 600px){
+  .aboutme{
     height: auto;
 }
 
@@ -259,3 +350,4 @@
     50%  { opacity: .5; }
     100% { opacity: 1; }
   }
+}

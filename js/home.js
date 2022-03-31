@@ -166,7 +166,7 @@ function reload(){
         screensize();
         setTimeout(function(){
             location.reload();
-          },1);
+          },10);
     }
 }
 

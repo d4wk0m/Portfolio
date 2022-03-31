@@ -19,10 +19,6 @@
     font-size: 7vw;
     font-weight: 500;
     margin: 0;
-
-    /* filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
-    -webkit-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238,240,242,0.4));
-    -moz-filter: drop-shadow(0vw 0.1vw 0.2vw rgba(238, 240, 242, 0.4)); */
 }
 
 .aboutme-header h3{
@@ -30,10 +26,6 @@
     font-weight: 500;
     margin: 0;
     color: rgba(166, 65, 184, 1);
-
-    /* filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
-    -webkit-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61));
-    -moz-filter: drop-shadow(0vw 0.1vw 0.3vw rgba(166, 65, 184, 0.61)); */
 }
 
 .aboutme-text > p{
@@ -50,7 +42,7 @@
 
 .aboutme-skills h2{
     font-weight: 400;
-    font-size: 6vw;
+    font-size: 7vw;
     text-align: center;
 }
 
@@ -59,28 +51,28 @@
     column-gap: 5vw;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 10vw;
+    row-gap: 5vw;
     margin-top: 10vw;
 }
 
 .aboutme-skills-stars > div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    column-gap: 5vw;
-    min-width: 300px;
+    row-gap: 5vw;
+    width: 100%;
 }
 
 .stars-item{
+    width: 100%;
     display: flex;
     align-items: center;
     column-gap: 1vw;
     justify-content: space-between;
     border-radius: 0.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 3vw 6vw 3vw 6vw;
 
-    font-size: 3vw;
+    font-size: 5vw;
 
     -webkit-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 1);
@@ -145,6 +137,7 @@
 }
 
 .aboutme-skills-stars{
+  margin-top: 4vw;
     display: flex;
     column-gap: 5vw;
     justify-content: center;
@@ -162,8 +155,7 @@
     column-gap: 1vw;
     justify-content: space-between;
     border-radius: 0.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 1vw 2vw 1vw 2vw;
 
     font-size: 1.5vw;
 

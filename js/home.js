@@ -1,5 +1,6 @@
 window.addEventListener("load", screensize)
 window.addEventListener("resize", reload)
+window.addEventListener("orientationchange", reload)
 
 function screensize(){
     if (window.innerWidth >= 600){
@@ -125,22 +126,23 @@ function screensize(){
         window.addEventListener("scroll", changeactive);
     
         function changeactive(){
-            let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;;
-            if (currentScroll <= document.getElementsByClassName('home')[0].offsetTop){
+            let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            currentScroll = currentScroll + (window.innerHeight * 0.5);
+            if (currentScroll <= document.getElementsByClassName('home')[0].offsetTop + document.getElementsByClassName('home')[0].offsetHeight){
                 document.querySelectorAll('.navbar-active').forEach((item) => {
                     item.classList.remove("navbar-active");
                     })
                 document.getElementById('home').parentElement.classList.add("navbar-active");
             }
     
-            else if (currentScroll <= document.getElementsByClassName('aboutme')[0].offsetTop){
+            else if (currentScroll <= document.getElementsByClassName('aboutme')[0].offsetTop + document.getElementsByClassName('aboutme')[0].offsetHeight){
                 document.querySelectorAll('.navbar-active').forEach((item) => {
                     item.classList.remove("navbar-active");
                     })
                 document.getElementById('aboutme').parentElement.classList.add("navbar-active");
             }
     
-            else if (currentScroll <= document.getElementsByClassName('projects')[0].offsetTop){
+            else if (currentScroll <= document.getElementsByClassName('projects')[0].offsetTop + document.getElementsByClassName('projects')[0].offsetHeight){
                 document.querySelectorAll('.navbar-active').forEach((item) => {
                     item.classList.remove("navbar-active");
                     })
@@ -158,23 +160,16 @@ function screensize(){
 }
 
 function reload(){
-    var context;
-    var $window = $(window);
+    var width = document.innerWidth;
 
-    if ($window.width() <= 600) {
-        context = 'small';
-    }else {
-        context = 'large';
+    if (width = 600){
+        screensize();
+        setTimeout(function(){
+            location.reload();
+          },1);
     }
-    $(window).resize(function() {
-        if(($window.width() <= 600) && (context != 'small')) {
-            screensize()
-            location.reload();
-            return false;
-        } else if (context != 'large') {
-            screensize()
-            location.reload();
-            return false;
-        }
-    });
 }
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});

@@ -1,6 +1,6 @@
 window.addEventListener("load", screensize)
 window.addEventListener("resize", reload)
-// window.addEventListener("orientationchange", reload)
+window.addEventListener("orientationchange", reloadtrigger)
 
 function screensize(){
     if (window.innerWidth >= 600){
@@ -159,10 +159,34 @@ function screensize(){
     }
 }
 
-function reload(){
-    var width = document.innerWidth;
+function reloadtrigger(){
+    screensize();
+    setTimeout(function(){
+        location.reload();
+      },10);
+}
 
-    if (width = 600){
+var current = window.innerWidth;
+var currentt
+var currentt2
+
+if (current < 600){
+    currentt = "small";
+}
+else{
+    currentt = "large";
+}
+
+function reload(){
+    if (window.innerWidth < 600){
+        currentt2 = "small";
+    }
+    else{
+        currentt2 = "large";
+    }
+    
+    if (currentt != currentt2){
+        currentt = currentt2
         screensize();
         setTimeout(function(){
             location.reload();

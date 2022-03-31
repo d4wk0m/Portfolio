@@ -17,7 +17,6 @@ function itemgenerator(){
             r = r + lang[j]
         }
         temparray = r.split(" ")
-        console.log(temparray[0])
 
         if (tempdifficulty === "1"){
             tempdifficultyname = "newbie"

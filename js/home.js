@@ -1,6 +1,6 @@
 window.addEventListener("load", screensize)
 window.addEventListener("resize", reload)
-window.addEventListener("orientationchange", reload)
+// window.addEventListener("orientationchange", reload)
 
 function screensize(){
     if (window.innerWidth >= 600){
